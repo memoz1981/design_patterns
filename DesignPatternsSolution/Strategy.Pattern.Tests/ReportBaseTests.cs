@@ -41,7 +41,7 @@ public class ReportBaseTests
         //act
 
         //assert
-        Assert.Throws<InvalidOperationException>(action);
+        Should.Throw<InvalidOperationException>(action);
     }
 
     [Theory]
@@ -83,6 +83,6 @@ public class ReportBaseTests
         //act
 
         //assert
-        Assert.Throws<InvalidOperationException>(action);
+        Should.Throw<InvalidOperationException>(action);
     }
 }
