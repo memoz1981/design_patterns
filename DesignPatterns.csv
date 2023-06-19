@@ -6,3 +6,9 @@ Note: The strategy doesn't offer end-to-end implementation to a problem, rather 
 Note: Any kind of interface/abstract class usage is strategy imlementation, disregards if it's implemented or resolved.","1. Context - element containing client code with behaviours
 2. IStrategy interface - the behaviour being abstracted.
 3. StrategyImplementations 1,2,3 - Behavior Implementation",Yes - By separating the behaviour from the class,Partial - by making it possible to extend the behaviour. Still existing code will be updated. ,P - Interfaces are used to substitute for each behaviour,P - An interface is used per behaviour,"N/A - again this strategy doesn't care on how the substitution is done, rather what is done is relevant, not how. "
+Singleton,Behavioral,"Required if:
+1. Shared DB
+2. Shared network resource
+3. Constructor requires large amount of data
+
+Best implementation is DI container, singleton lifetitmem second best is Lazy Implementation",Singleton instance of the class,No - as the class creation responsibility is given to class. ,N/A,N/A,N/A,N/A
