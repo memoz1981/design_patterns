@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Singleton.Pattern;
-using Xunit.Microsoft.DependencyInjection;
 using Xunit.Microsoft.DependencyInjection.Abstracts;
 
 namespace Tests.Common;
@@ -16,5 +15,4 @@ public class TestStartup : TestBedFixture
 
     protected override string GetConfigurationFile()
         => string.Empty; 
-
 }

@@ -73,7 +73,7 @@ public class ReportBaseTests
     [Theory]
     [InlineData(typeof(ReportWithoutStrategy))]
     [InlineData(typeof(ReportWithStrategy))]
-    public void SendReport_WithUnknownRecipientType_ShouldHThrowException(Type type)
+    public void SendReport_WithUnknownRecipientType_ShouldThrowException(Type type)
     {
         //arrange
         var report = (ReportBase)Activator.CreateInstance(type);
